@@ -13,7 +13,7 @@ export default function Footer() {
           </div>
         </div>
         <div>
-          <h4 className="font-semibold mb-2">CompanyName</h4>
+          <h4 className="font-semibold mb-2">Detroid</h4>
           <ul>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/services">Services</Link></li>
