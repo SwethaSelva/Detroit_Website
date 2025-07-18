@@ -17,15 +17,8 @@ const FileUpload: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto text-sm" style={{
-      margin: 'unset',
-      paddingBottom: '13px',
-    }}>
-      <label className="block font-medium text-gray-700 mb-1">
-        Add a file or image
-      </label>
-
-      <div className="flex items-center space-x-4">
+    <div className="w-full max-w-md mx-auto text-sm pb-[6px] ml-0">
+      <div className="flex items-center justify-start gap-4 mb-1">
         <button
           type="button"
           className="px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded shadow focus:outline-none focus:ring-2 focus:ring-blue-400"
@@ -33,6 +26,8 @@ const FileUpload: React.FC = () => {
         >
           Choose a file
         </button>
+
+        <label className="text-gray-700 font-medium"> Add a file or image </label>
       </div>
 
       <input
