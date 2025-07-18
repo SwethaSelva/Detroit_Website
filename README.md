@@ -40,21 +40,13 @@ To run lint checks:
 npm run lint
 ````
 ## Project Structure
-Detroit/
-├── src/
-│   ├── components/       # Reusable UI components
-│   ├── assets/           # Images, logos, etc.
-│   └── App.tsx           # Main app file
-├── index.html
-├── tailwind.config.js
-├── vite.config.ts
-└── tsconfig.json
+<img width="418" height="190" alt="Screenshot 2025-07-18 at 16 28 32" src="https://github.com/user-attachments/assets/15125365-f462-4445-9714-43f34c2bd1c9" />
 
 ## Features
-	•	Fast refresh via Vite
-	•	Typed components
-	•	Tailwind utilities for rapid styling
-	•	Configurable ESLint with optional strict/type-checked rules
+1. Fast refresh via Vite
+2. Typed components
+3. Tailwind utilities for rapid styling
+4. Configurable ESLint with optional strict/type-checked rules
 
 ## Author
 Made with ❤️ by Swetha Selvakumaran
