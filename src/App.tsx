@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Header />
-      <main style={{ paddingTop: '80px', padding: '1rem', maxWidth: '100%', minHeight: '100vh' }}>
+      <main className="pt-20 px-4 max-w-full min-h-screen">
         <Routes>
           <Route path="/" element={<h1>Home Page</h1>} />
           <Route path="/about" element={<About />} />

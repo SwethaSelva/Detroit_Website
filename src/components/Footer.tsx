@@ -1,4 +1,5 @@
-import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -10,6 +11,8 @@ export default function Footer() {
           <div className="flex gap-4">
             <FaInstagram />
             <FaLinkedin />
+            <FaXTwitter />
+            <FaFacebook />
           </div>
         </div>
         <div>

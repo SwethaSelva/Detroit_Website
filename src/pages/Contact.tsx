@@ -1,5 +1,6 @@
 import emailjs from 'emailjs-com';
 import { useRef } from 'react';
+import FileUpload from '../components/FileUpload';
 
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
@@ -17,9 +18,9 @@ export default function Contact() {
       <input type="text" name="name" placeholder="Your Name" required className="w-full mb-2 p-2 border" />
       <input type="text" name="subject" placeholder="Subject" required className="w-full mb-2 p-2 border" />
       <textarea name="message" placeholder="Message" required className="w-full mb-2 p-2 border" />
-      <input type="file" name="file" className="w-full mb-2" />
+      <FileUpload />
       <input type="email" name="email" placeholder="Your Email" required className="w-full mb-2 p-2 border" />
-      <button type="submit" className="bg-blue-500 text-white p-2 w-full">Submit</button>
+      <button type="submit" className="p-2 w-full">Submit</button>
     </form>
   );
 }
