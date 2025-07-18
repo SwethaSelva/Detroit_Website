@@ -1,69 +1,69 @@
-# React + TypeScript + Vite
+# Detroit — React + TypeScript + Vite + Tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a modern web app starter built using **React**, **TypeScript**, **Vite**, and **Tailwind CSS**. It's designed for rapid development with hot module replacement, strong typing, and utility-first styling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- ESLint + Prettier
+- File structure ready for scalable components
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Setup & Development
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### 1. Install dependencies
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+npm install
+````
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Run Locally
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm run dev
+````
+### 3. Build for production
+```bash
+npm run build
+````
+## Linting
+ESLint is pre-configured for strict type-checking and React best practices.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+To run lint checks:
+```bash
+npm run lint
+````
+## Project Structure
+Detroit/
+├── src/
+│   ├── components/       # Reusable UI components
+│   ├── assets/           # Images, logos, etc.
+│   └── App.tsx           # Main app file
+├── index.html
+├── tailwind.config.js
+├── vite.config.ts
+└── tsconfig.json
+
+## Features
+	•	Fast refresh via Vite
+	•	Typed components
+	•	Tailwind utilities for rapid styling
+	•	Configurable ESLint with optional strict/type-checked rules
+
+## Author
+Made with ❤️ by Swetha Selvakumaran
+
+https://www.linkedin.com/in/swetha-selvakumaran/
+
+App so farther
+
+<img width="1460" height="868" alt="Screenshot 2025-07-18 at 16 22 49" src="https://github.com/user-attachments/assets/eeeacbec-3781-4866-93bb-1acff7d5c1f7" />
+
+<img width="1460" height="874" alt="Screenshot 2025-07-18 at 16 23 52" src="https://github.com/user-attachments/assets/c2726976-c14c-43cb-8796-81e17c37e4fa" />
+
